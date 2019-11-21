@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	min-width: 450px;
+	min-width: 940px;
 	background-image: url("../image/Group 1.jpg"); /*.. - escape to prevent level*/
 	background-size: cover;
 	background-position: center;
@@ -24,7 +24,7 @@ body {
 .header {
 	height: 50px;
 	border-bottom: 1px solid rgba(231, 231, 242, 0.4);
-	margin: 0 120px;
+	margin: 0 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -36,6 +36,18 @@ body {
 	color: #FFFFFF;
 	text-decoration: none;
 	padding-right: 30px;
+}
+
+.header a:hover {
+	color: rgba(231, 231, 242, 0.3);
+}
+
+.header a svg {
+	fill: #FFFFFF;
+}
+
+.header a svg:hover {
+	fill: rgba(231, 231, 242, 0.3);
 }
 
 .header-leftmenu a:last-child, .header-rightmenu a:last-child {
@@ -72,7 +84,7 @@ body {
 }
 
 .content-title {
-	margin-left: 120px;
+	margin-left: 5%;
 	width: 450px;
 	height: 100%;
 	color: #FFFFFF;
@@ -113,13 +125,14 @@ body {
 	color: #FFFFFF;
 }
 
-.content-promo-text-array {
+.content-promo-text-arrow {
 	width: 35px;
 	position: relative;
+	left: 0;
 	transition: left 0.3s ease 0s;
 }
 
-.content-promo-text-array:hover {
+.content-promo-text-arrow:hover {
 	left: 10px;
 }
 
@@ -132,7 +145,7 @@ body {
 	background: rgba(255, 255, 255, 0.15);
 	backdrop-filter: blur(10px);
 	border-radius: 20px 20px 0px 0px;
-	margin: 0 120px;
+	margin: 0 5%;
 	height: 120px;
 	padding: 0 20px;
 }
@@ -149,9 +162,8 @@ body {
 
 .booking-data-form {
 	display: flex;
-	border: 1px solid #E7E7F2;
+	border: 1px solid rgba(231, 231, 242, 0.3);
 	border-radius: 10px;
-	opacity: 0.3;
 	height: 50px;
 	width: 100%;
 }
@@ -159,16 +171,25 @@ body {
 .booking-data-btn {
 	width: 200px;
 	margin-left: 20px;
+	background: #91CB82;
+	border-radius: 10px;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+}
+
+.booking-data-btn:hover {
+	background: #83b577;
 }
 
 .booking-data p {
 	margin:0;
 	font-size: 10px;
-	color: #E7E7F2;
+	color: rgba(231, 231, 242, 0.3);
 }
 
 .booking-data div {
-	border-right: 1px solid #E7E7F2;
+	border-right: 1px solid rgba(231, 231, 242, 0.3);
 }
 
 .booking-data div:last-child {
@@ -186,25 +207,37 @@ body {
 	margin-right: 5px;
 }
 
+.booking-data-input {
+	width: 100%;
+}
+
 .booking-data-accomodation {
-	flex-grow: 3;
+	flex-shrink: 1;
+	flex-basis: 40%;
 }
 
 .booking-data-checkin, .booking-data-checkout {
-	flex-grow: 2;
+	flex-shrink: 5;
+	flex-basis: 15%;
 }
 
 .booking-data-guests {
-	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 30%;
 }
 
+.booking-data-form input {
+	border: none;
+	width: 100%;
+	background: none;
+	color: #FFFFFF;
+	font-size: 14px;
+}
 
-
-@media screen and (max-width: 750px) {
-	.header {
-		height: 100px;
-		flex-direction: column;
-		justify-content: space-around;
-	}
+.booking-data-form input:focus,  .booking-data-form input:active {
+	color: #FFFFFF;
+	font-size: 14px;
+	outline: none;
+	border-bottom: 1px solid rgba(231, 231, 242, 0.3);
 }
 
