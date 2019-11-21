@@ -134,6 +134,61 @@ body {
 	border-radius: 20px 20px 0px 0px;
 	margin: 0 120px;
 	height: 120px;
+	padding-left: 20px;
+}
+
+.booking-text {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.booking-data {
+	display: flex;
+	border: 1px solid #E7E7F2;
+	border-radius: 10px;
+	opacity: 0.3;
+	height: 50px;
+	width: 600px;
+}
+
+.booking-data p {
+	margin:0;
+	font-size: 10px;
+	color: #E7E7F2;
+}
+
+.booking-data div {
+	border-right: 1px solid #E7E7F2;
+}
+
+.booking-data div:last-child {
+	border-right: none;
+}
+
+.booking-data > div { /*непосредственные дочерние дивы*/
+	display: flex;
+	align-items: center;
+}
+
+.booking-data img {
+	height: 18px;
+	margin: 0 5px;
+}
+
+.booking-data-input {
+	width: 15px;
+}
+
+.booking-data-accomodation {
+	flex-grow: 3;
+}
+
+.booking-data-checkin, .booking-data-checkout {
+	flex-grow: 2;
+}
+
+.booking-data-guests {
+	flex-grow: 1;
 }
 
 @media screen and (max-width: 750px) {
