@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	min-width: 940px;
+	min-width: 450px;
 	background-image: url("../image/Group 1.jpg"); /*.. - escape to prevent level*/
 	background-size: cover;
 	background-position: center;
@@ -86,7 +86,6 @@ body {
 .content-title {
 	margin-left: 5%;
 	width: 450px;
-	height: 100%;
 	color: #FFFFFF;
 }
 
@@ -169,7 +168,7 @@ body {
 }
 
 .booking-data-btn {
-	width: 200px;
+	width: 190px;
 	margin-left: 20px;
 	background: #91CB82;
 	border-radius: 10px;
@@ -242,3 +241,91 @@ body {
 	border-radius: 0;
 }
 
+
+
+@media screen and (max-width: 900px) {
+	.header a {
+		padding-right: 15px;
+	}
+
+	.content {
+		height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.content-title {
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+
+	.content-title h1 {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 10px;
+	}
+
+	.content-title h6 {
+		font-size: 16px;
+	}	
+
+	.content-promo {
+		align-self: flex-end;
+	}
+
+	.content-promo-text-next {
+		margin: 10px 0;
+	}
+
+	.content-promo-text-title {
+		margin: 10px 0;
+		line-height: 30px;
+		font-size: 27px;
+	}
+
+	.booking {
+		height: 350px;
+	}
+
+	.booking-text {
+		margin: 10px 0;
+	}
+
+	.booking-data {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.booking-data-form {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.booking-data-form > div {
+		flex-basis: inherit;
+		flex-shrink: inherit;
+		height: 20px;
+		border-right: none;
+	}
+
+	.booking-data div {
+		border-bottom: 1px solid rgba(231, 231, 242, 0.3);
+	}
+
+	.booking-data div:last-child {
+		border-bottom: none;
+	}
+
+	.booking-data-btn {
+		width: 100%;
+		margin: 10px 0;
+		height: 40px;
+	}
+
+	
+
+}
