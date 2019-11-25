@@ -2,8 +2,6 @@ body {
 	padding: 0;
 	margin: 0;
 	height: 100vh;
-	/*width: 100vw;*/
-	min-width: 450px;
 	background-image: url("../image/Group 1.jpg"); /*.. - escape to prevent level*/
 	background-size: cover;
 	background-position: center;
@@ -231,6 +229,7 @@ body {
 	background: none;
 	color: #FFFFFF;
 	font-size: 14px;
+	border-bottom: 	1px solid rgba(0,0,0,0);
 }
 
 .booking-data-form input:focus,  .booking-data-form input:active {
@@ -245,7 +244,9 @@ body {
 
 @media screen and (max-width: 900px) {
 	body {
-		background-size: inherit;
+		background-size: initial;
+		background-position: 	initial;	
+		height: initial;
 	}
 
 	.header a {
@@ -263,11 +264,30 @@ body {
 	.content-title {
 		text-align: center;
 		margin: 0 0 10px 0;
+		width: 	90%;
+	}
+
+	.content-title h1 {
+		font-size: 40px;
 	}
 
 	.content-promo {
 		align-self: flex-end;
+		box-sizing: border-box;	
 	}
+
+	.content-promo-text-next {
+		margin: 15px 0;
+	}
+
+	.content-promo-text-title {
+		margin: 0;
+	}
+
+		.content-promo-text img {
+		padding: 10px 0;
+	}
+
 
 	.booking {
 		height: initial;
@@ -307,4 +327,24 @@ body {
 		margin: 10px 0;
 		height: 40px;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.header-leftmenu, .header-rightmenu {
+		display: 	none;
+	}
+
+	.header-logo {
+		position: initial;	
+		transform: 	initial;	
+	}
+}
+
+@media screen and (max-width: 320px) {
+		.content-promo {
+				width: 	90%;
+				align-self: 	initial;	
+				border-radius: 16px 16px 16px 16px;
+				overflow: 	hidden;	
+		}
 }
