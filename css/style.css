@@ -243,12 +243,6 @@ body {
 
 
 @media screen and (max-width: 900px) {
-	body {
-		background-size: initial;
-		background-position: 	initial;	
-		height: initial;
-	}
-
 	.header a {
 		padding-right: 15px;
 	}
@@ -347,4 +341,12 @@ body {
 				border-radius: 16px 16px 16px 16px;
 				overflow: 	hidden;	
 		}
+}
+
+@media screen and (max-width: 900px) and (max-height: 770px){
+	body {
+		background-size: initial;
+		background-position: 	initial;	
+		height: initial;
+	}
 }
