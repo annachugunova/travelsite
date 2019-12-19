@@ -104,7 +104,7 @@ body {
 	width: 300px;
 	display: flex;
 	justify-content: space-between;
-	rgba(42, 50, 52, 0.8);
+	background: rgba(42, 50, 52, 0.8);
 	backdrop-filter: blur(10px);
 	border-radius: 16px 0px 0px 16px;
 	padding-left: 20px;
